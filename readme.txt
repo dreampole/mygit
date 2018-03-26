@@ -1,4 +1,4 @@
-﻿11、安装(linux使用命令，win下载安装包)
+﻿1、安装(linux使用命令，win下载安装包)
 sudo apt-get install git
 
 2、设置
