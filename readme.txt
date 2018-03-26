@@ -14,7 +14,7 @@ git init
 添加：git add ceshi.txt
 提交：git commit -m "说明文字"
 
-5、连接github
+5、连接远程仓库
 （1）、终端中创建SSH Key:ssh-keygen -t rsa -C "youremail@example.com"（linux）
        管理员身份打开git-bash.exe创建SSH Key:ssh-keygen -t rsa -C "youremail@example.com"（win）	
 成功后可以在用户主目录里找到.ssh目录，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人
@@ -26,29 +26,3 @@ git init
 提交：git push origin master
 （5）、克隆远程库到本地
 git clone git@github.com:dreampole/mygit.git
-
-6、连接gitee
-（1）、在本地库上使用命令git remote add把它和码云的远程库关联：
-git remote add origin git@gitee.com:dreampole/mygit.git
-提示：git remote rm origin 说明本地库已经关联了一个远程库
-（2）、查看远程库信息
-git remote -v
-（3）、修改已关联的远程库的标识名称
-首先删除已关联的origin远程库：git remote rm origin
-重新关联github远程库标识名修改为github ： git remote add github git@github.com:dreampole/mygit.git
-再关联gitee远程库标识名为gitee ： git remote add gitee git@github.com:dreampole/mygit.git
-再次运行git remote -v查看远程库信息，得到的结果是：
-gitee	git@github.com:dreampole/mygit.git (fetch)
-gitee	git@github.com:dreampole/mygit.git (push)
-github	git@github.com:dreampole/mygit.git (fetch)
-github	git@github.com:dreampole/mygit.git (push)
-说明两个远程库都已经关联成功
-（4）、提交
-git push github master
-git push gitee master
-
-
-
-
-
-
