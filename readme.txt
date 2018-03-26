@@ -36,10 +36,10 @@ git remote -v
 （3）、修改已关联的远程库的标识名称
 首先删除已关联的origin远程库：git remote rm origin
 重新关联github远程库标识名修改为github ： git remote add github git@github.com:dreampole/mygit.git
-再关联gitee远程库标识名为gitee ： git remote add gitee git@github.com:dreampole/mygit.git
+再关联gitee远程库标识名为gitee ： git remote add gitee git@gitee.com:dreampole/mygit.git
 再次运行git remote -v查看远程库信息，得到的结果是：
-gitee	git@github.com:dreampole/mygit.git (fetch)
-gitee	git@github.com:dreampole/mygit.git (push)
+gitee	git@gitee.com:dreampole/mygit.git (fetch)
+gitee	git@gitee.com:dreampole/mygit.git (push)
 github	git@github.com:dreampole/mygit.git (fetch)
 github	git@github.com:dreampole/mygit.git (push)
 说明两个远程库都已经关联成功
