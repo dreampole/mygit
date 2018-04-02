@@ -11,7 +11,7 @@ git init
 命令
 
 4、把文件添加到仓库并提交
-添加：git add readme.txt
+添加：git add readme.txt(添加整个目录： git add .)
 提交：git commit -m "说明文字"
 
 5、连接github
